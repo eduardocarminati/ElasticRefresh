@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4AD9A9081F9F99600029A7B2 /* ElasticRefresh.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD9A9061F9F99600029A7B2 /* ElasticRefresh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AD9A9131F9F99810029A7B2 /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9A90E1F9F99810029A7B2 /* DGElasticPullToRefreshConstants.swift */; };
+		4AD9A9141F9F99810029A7B2 /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9A90F1F9F99810029A7B2 /* DGElasticPullToRefreshExtensions.swift */; };
+		4AD9A9151F9F99810029A7B2 /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9A9101F9F99810029A7B2 /* DGElasticPullToRefreshLoadingView.swift */; };
+		4AD9A9161F9F99810029A7B2 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9A9111F9F99810029A7B2 /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
+		4AD9A9171F9F99810029A7B2 /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD9A9121F9F99810029A7B2 /* DGElasticPullToRefreshView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4AD9A9031F9F99600029A7B2 /* ElasticRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElasticRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AD9A9061F9F99600029A7B2 /* ElasticRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElasticRefresh.h; sourceTree = "<group>"; };
 		4AD9A9071F9F99600029A7B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD9A90E1F9F99810029A7B2 /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
+		4AD9A90F1F9F99810029A7B2 /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshExtensions.swift; sourceTree = "<group>"; };
+		4AD9A9101F9F99810029A7B2 /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
+		4AD9A9111F9F99810029A7B2 /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
+		4AD9A9121F9F99810029A7B2 /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				4AD9A9061F9F99600029A7B2 /* ElasticRefresh.h */,
+				4AD9A90E1F9F99810029A7B2 /* DGElasticPullToRefreshConstants.swift */,
+				4AD9A90F1F9F99810029A7B2 /* DGElasticPullToRefreshExtensions.swift */,
+				4AD9A9101F9F99810029A7B2 /* DGElasticPullToRefreshLoadingView.swift */,
+				4AD9A9111F9F99810029A7B2 /* DGElasticPullToRefreshLoadingViewCircle.swift */,
+				4AD9A9121F9F99810029A7B2 /* DGElasticPullToRefreshView.swift */,
 				4AD9A9071F9F99600029A7B2 /* Info.plist */,
 			);
 			path = ElasticRefresh;
@@ -95,6 +110,7 @@
 				TargetAttributes = {
 					4AD9A9021F9F99600029A7B2 = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AD9A9171F9F99810029A7B2 /* DGElasticPullToRefreshView.swift in Sources */,
+				4AD9A9141F9F99810029A7B2 /* DGElasticPullToRefreshExtensions.swift in Sources */,
+				4AD9A9131F9F99810029A7B2 /* DGElasticPullToRefreshConstants.swift in Sources */,
+				4AD9A9161F9F99810029A7B2 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				4AD9A9151F9F99810029A7B2 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +262,7 @@
 		4AD9A90C1F9F99600029A7B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -248,10 +270,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ElasticRefresh/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.carminati.ElasticRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +283,7 @@
 		4AD9A90D1F9F99600029A7B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -266,6 +291,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = ElasticRefresh/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.carminati.ElasticRefresh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
